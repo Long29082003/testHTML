@@ -1,0 +1,102 @@
+label {
+  display : block;
+}
+
+body {
+    font-size: 23px;
+    color: rgb(255, 253, 253);
+    background-image : url(55542141_0.jpg);
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center;
+}
+
+h1, p {
+  text-align: center;
+  color: black;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 1em;
+    font-family:'Courier New', Courier, monospace
+}
+
+p {
+    font-size: 25px;
+    font-family:papyrus;
+    font-weight: bold;
+}
+
+
+
+form {
+    width: 60vw;
+    margin: 2em auto;
+    max-width : 700px;
+    background-color:rgba(81, 61, 61, 0.9);
+    border-radius: 4px;
+    padding: 15px 70px;
+    font-family:"Franklin Gothic Medium "
+}
+
+.text, textarea {
+    width:100%;
+    margin: 4px 0;
+    font-size: 16px;
+    color: black;
+}
+
+textarea {
+    margin: 15px 0 5px 0;
+}
+
+label {
+    margin: 20px 0 0 0;
+}
+
+fieldset {
+    margin-top: 25px;
+    border:none;
+}
+
+select {
+    font-size: 19px;
+    margin: 10px 0 5px 0;
+}
+
+.first_radio label {
+    margin: 5px 0 0 0;
+}
+
+fieldset label {
+    margin-top: 5px;
+}
+
+button {
+    display:block;
+    width:40%;
+    margin: 20px auto;
+    font-size: 22px;
+    background-color:rgb(227, 227, 227);
+}
+
+button:hover {
+    background-color:rgb(227, 227, 227,0.9);
+    border-radius : 4px;
+}
+
+.second_radio label {
+    margin:5px 0;
+}
+
+.box {
+    min-height:30px;
+    border-radius: 6px;
+    padding:5px 10px;
+    font-size: 18px;
+}
+
+input[type="radio"] {
+    transform : scale(1.25);
+}

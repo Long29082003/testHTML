@@ -1,0 +1,51 @@
+<!DOCTYPE htlm>
+<html lang = "en">
+  <head>
+    <title>Godzilla Minus One Survey</title>
+    <meta charset = "utf-8">
+    <link rel = "stylesheet" href = "styles.css">
+  </head>
+  <body>
+    <h1 id = "title">Godzilla Minus One Survey</h1>
+    <p id = "description">Tell me what you think about Godzilla Minus One after you watch the movie</p>
+    <form id = "survey-form">
+      <label for = "name" id = "name-label">Name <input class = "text box" type = "text" id = "name" placeholder = "Enter your freaking name" required></label>
+      <label for = "email" id = "email-label">Email <input class = "text box" type = "email" id = "email" placeholder = "Hand out your email!" required></label>
+      <label for = "number" id = "number-label">Age <input class = "text box" type = "number" min = 13 max = 100 id = "number" placeholder = "Wait, how old are you?"></label>
+      <label for = "dropwdown" id = "dropdown-label">How familiar are you with Godzilla?
+        <select id = "dropdown" class = "dropdown box">
+          <option>Select below</option>
+          <option>I don't know a dang thing!!!</option>
+          <option>I have heard about it</option>
+          <option>I have watched at least one movie about Godzilla</option>
+          <option>I have Godzilla's figurine at home</option>
+        </select>
+      <!-- This is for the multiple choices -->
+      </label>
+      <label class = "first_radio">What do you like most about this movie?
+        <label for = "radio1"><input type = "radio" id = "radio1" name = "most-liked" value = "monster-lover"checked> I like watching big monsters like Godzilla!!!</label>
+        <label for = "radio2"><input type = "radio" id = "radio2" name = "most-liked" value = "Japan-lover"> I like Japaneses</label>
+        <label for = "radio3"><input type = "radio" id = "radio3" name = "most-liked" value = "character-lover"> I like the characters' acting, which is not being overdrammatized at all by the way</label>
+        <label for = "radio4"><input type = "radio" id = "radio4" name = "most-liked" value = "acting-lover"> I like the growth of the main character, although a little shallow, and I respect the final decision of him choosing to live, to keep moving on, over pursuing death like a Kamikaze pilot</label>
+        <label for = "radio5"><input type = "radio" id = "radio5" name = "most-liked" value = "meaning-lover"> I like how the movie delves into issues like toxic nationalism and the obsessiveness of Japaneses to, which they call, "honor" while belittle the value of the soldier</label>
+      </label>
+      <fieldset id = "field-for-checkbox">
+        <legend>What would you like to see improve in the movie?</legend>
+        <label for = "checkbox1"><input type = "checkbox" id = "checkbox1" value = "CGI-fix"> More CGI please!!!</label>
+        <label for = "checkbox2"><input type = "checkbox" id = "checkbox2" value = "action-fix"> More action would be good</label>
+        <label for = "checkbox3"><input type = "checkbox" id = "checkbox3" value = "acting-fix"> The acting see a little bit pruning</label>
+        <label for = "checkbox4"><input type = "checkbox" id = "checkbox4" value = "remove-Godzilla-fix"> I don't understand why this movie needs a Godzilla in it</label>
+        <label for = "checkbox5"><input type = "checkbox" id = "checkbox5" value = "ending-fix"> I little tweak to the ending would help, it is too sun-shiny for its message</label>
+        <label for = "checkbox6"><input type = "checkbox" id = "checkbox6" value = "no-fix"> There is no hope, everything is far gone!!!</label>
+      </fieldset>
+      <label>Do you want to add something?
+        <textarea class = "box" placeholder = "Enter your thoughts here" rows = 4></textarea>
+      </label>
+      <label class = "second_radio">Would you suggest Godzilla: Minus One to a friend?
+        <label for = "second_radio1"><input type = "radio" id = "second_radio1" name = "second_radio" value = "would-suggest"> Yes</label>
+        <label for = "second_radio2"><input type = "radio" id = "second_radio2" name = "second_radio" value = "would-not-suggest"> No</label>
+      </label>
+      <button type = "submit" id = "submit">Submit!</button>
+    </form>
+  </body>
+</html>
