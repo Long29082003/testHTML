@@ -1,0 +1,171 @@
+
+* {
+    box-sizing: border-box;
+    font-size: 17px;
+    scroll-behavior: smooth;
+}
+
+*:not(#navbar, ul) {
+    padding-left: 1.5px;
+}
+
+.main-section:not(code, .terminal) {
+    font-family: "Trebuchet MS"
+}
+
+img {
+    height: 100px;
+    width: 200px;
+    position: relative;
+    margin-bottom: -30px;
+}
+
+#navbar {
+  width: 20%;
+  height: 100%;
+  max-width: 260px;
+  position: fixed;
+  border-right: 1.5px solid black;
+}
+
+#navbar h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+#navbar a {
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+code {
+    display: block;
+    background-color: rgb(229, 229, 229);
+    border-radius: 3px;
+    margin-left: 10px;
+    padding: 5px 0 5px 3px;
+}
+
+.container {
+    display: flex;
+    justify-content: right;
+}
+
+main {
+    width: 80%;
+}
+
+.container1 p {
+    display: flex;
+    flex-direction: row;
+}
+
+.container p .type{
+    display: block;
+}
+
+.container p .type {
+    width: 150px;
+}
+
+
+.text {
+    background-color: rgb(227, 227, 227);
+    color: rgb(255, 81, 83);
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 25px;
+    margin-left: 12px;
+}
+
+
+.comment {
+    color: rgb(151, 150, 150);
+}
+
+.terminal {
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    margin-left : 10px;
+    padding: 5px 0 5px 3px;
+}
+
+ul > li {
+    margin-bottom: 12px;
+}
+
+.main-section p {
+    margin-left: 10px;
+}
+
+.main-section a {
+    color: black;
+}
+
+.main-section a:hover {
+    color: rgb(150, 150, 150);
+}
+
+.container section:last-of-type p{
+    margin-top: -15px;
+}
+
+.no-heading {
+    margin-top: -15px;
+}
+
+@media (max-width:1050px) {
+    #navbar {
+        border-right: unset;
+        position: static;
+        width: 80%;
+        max-width: unset;
+        margin: 20px auto;
+        background-color: rgb(202, 200, 200);
+        padding: 7px 0 6px 6px;
+        border-radius: 4px;
+    }
+    
+    #navbar a::before {
+        content: "- "
+    }
+    
+    #navbar::before {
+        content: "";
+        height: 100px;
+        width: 200px;
+        background-image: url("Python-Logo.png");
+        display: block;
+        background-size: cover;
+        margin-left: 8px;
+        margin-bottom: -12px;
+    }
+
+
+    img {
+        border: 0;
+        clip: rect(1px, 1px, 1px, 1px);
+        clip-path: inset(50%);
+        height: 1px;
+        width: 1px;
+        position: absolute;
+        overflow: hidden;
+        white-space: nowrap;
+        padding: 0;
+        margin: -1px;
+    }
+
+    .container {
+        justify-content:center;
+    }
+}
