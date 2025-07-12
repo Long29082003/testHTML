@@ -1,0 +1,295 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+main {
+    overflow: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+  position: relative;
+}
+
+#header {
+  border: 1px solid black;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 131, 132);
+  z-index: 999;
+}
+
+.left-header {
+    font-size: 3rem;
+    display: flex;
+    margin-left: 6rem;
+}
+
+#nav-bar a {
+    font-size: 2.5rem;
+    text-decoration: none;
+    margin-right: 8rem;
+    position: relative;
+    left: 15rem;
+    color: black;
+}
+
+#nav-bar a:hover {
+    text-decoration: underline;
+}
+
+.left-header .logo-name {
+    margin-left: 2.5rem;
+}
+/* This is for the buffer of the main section */
+main::before {
+  content: "";
+  height: 70px;
+  width: 100%;
+  display: block;
+}
+
+.pring-container {
+  display:flex;
+}
+
+i {
+    font-size: 40px;
+}
+
+.container {
+    display:grid;
+    grid-template-columns: minmax(6rem, 1fr) minmax(min-content, 98rem) minmax(6rem, 1fr);
+}
+
+.email {
+    grid-column: 2/3;
+}
+
+#email {
+    margin-top: 5px;
+}
+
+.feature {
+    grid-column: 2/3;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+.content-center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+#email {
+    width: max(25%,7rem);
+    height: 2.5rem;
+    border-radius: 5px;
+}
+
+#submit {
+    background-color: rgb(251, 227, 132);
+    color: black;
+    font-size: 1.5rem;
+    height: 2rem;
+    width: max(15%,5rem);
+    border-radius: 5px;
+    margin-top: 0.75rem;
+}
+
+
+.feature1, .feature2, .feature3, .feature4 {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.feature i {
+    font-size: 4rem;
+    display: block;
+    width: 6rem;
+}
+
+.feature .right-feature h2 {
+    font-size: 2rem;
+}
+
+.feature .right-feature p {
+    font-size: 2rem;
+}
+
+.video-container {
+    grid-column: 2 / 3;
+    background-color: rgb(255, 152, 153);
+    width: 70%;
+    margin: 1rem auto;
+    border-radius: 5px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+video {
+    width: 50%;
+    height: 40rem;
+    background-color: white;
+}
+
+.video-container blockquote {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    width: 90%;
+    text-align: center;
+    font-style: italic;
+    font-family: "Bodoni MT";
+}
+
+.video-container span::before {
+    content: '" '
+}
+
+.video-container span::after {
+    content: ' "'
+}
+
+.video-container h2 {
+    font-weight: unset;
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 1rem 0 2rem 0;
+    font-family: "Baskerville";
+}
+
+hr {
+    margin: 1rem 0;
+    border-top: 2px solid black;
+}
+
+.pricing {
+    grid-column: 2 / 3;
+}
+
+.pricing-container {
+    margin: 6rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem 2.1rem;
+    font-size: 2rem;
+}
+
+.product .product-background {
+    background: linear-gradient(45deg, rgb(253, 98, 127) 0%, rgb(254, 61, 63) 50%, rgb(253, 98, 127) 100%);
+    border-radius: 8px 8px 0 0;
+    height: 55%;
+}
+
+.product-background h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0 -0.5rem 0;
+    color: rgb(246, 245, 245);
+    padding: 5px;
+}
+
+.product-background img {
+    width: 90%;
+    height: min(75%, 19rem);
+    object-fit: cover;
+    margin-top: 1rem;
+}
+
+
+.product {
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 8px;  
+}
+
+.product-background:hover {
+    opacity: 0.7;
+}
+
+.product-price {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.3rem;
+    margin-bottom: -1.5rem;
+}
+
+
+.product-description li {
+    font-size: 1.6rem;
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+.product-description {
+    margin-bottom: 3rem;
+    padding: 8px;
+    font-family: "Rockwell";
+}
+
+.product-description li::before {
+    content: "- ";
+}
+
+.product-background a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    font-weight: bold;
+    text-decoration: unset;
+    color: unset;
+}
+
+footer {
+    background-color: rgb(236, 112, 112);
+    border-bottom: 3px solid rgb(232, 232, 232);
+    border-radius: 2rem 2rem 0 0;
+    overflow: hidden;
+}
+
+footer h2 {
+    font-size: 3rem;
+    color: white;
+    height: max(5vh, 5rem);
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer a {
+    text-decoration: unset;
+    color: unset;
+}
+
+footer a:hover {
+    background-color: rgb(211, 201, 201);
+}
+
+@media (max-width: 600px) {}
