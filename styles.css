@@ -44,7 +44,7 @@ body {
     text-decoration: none;
     margin-right: 8rem;
     position: relative;
-    left: 15rem;
+    left: 8rem;
     color: black;
 }
 
@@ -198,6 +198,7 @@ hr {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 4rem 2.1rem;
     font-size: 2rem;
+    justify-items: center;
 }
 
 .product .product-background {
@@ -292,4 +293,38 @@ footer a:hover {
     background-color: rgb(211, 201, 201);
 }
 
-@media (max-width: 600px) {}
+@media (min-width: 650px) and (max-width: 1100px) {
+    .pricing-container {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+
+    }
+
+    #nav-bar a {
+        font-size: 2rem;
+        margin-right: 4rem;
+    }
+}
+
+@media (max-width: 649px) {
+    .pricing-container {
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    #nav-bar a {
+        font-size: 2rem;
+        margin-right: 2rem;
+        left: 1rem;
+    }
+
+    #email {
+        width: 40%;
+    }
+
+    #submit {
+        width: 25%;
+    }
+
+}
